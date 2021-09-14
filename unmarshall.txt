@@ -1,0 +1,25 @@
+package main
+
+//https://blog.golang.org/json
+
+import (
+	"encoding/json"
+	"fmt"
+)
+
+type example struct {
+	IP             string `json:"ip"`
+	Countryname    string `json:"country_name"`
+}
+
+func main() {
+	raw := []byte(`{"ip":"24.107.206.67","country_name":"United States"}`)
+	var s example
+
+	if err := json.Unmarshal(raw, &s); err != nil {
+		fmt.Println(err)
+		return
+	}
+
+	fmt.Printf("%#v", s)
+}

@@ -1,0 +1,45 @@
+    Ip                  string `json:"ip"`
+    Continent_code      string `json:"continent_code"`
+    Continent_name      string `json:"continent_name"`
+    Country_code2       string `json:"country_code2"`
+    Country_code3       string `json:"country_code3"`
+    Country_name        string `json:"country_name"`
+    Country_capital     string `json:"country_capital"`
+    State_prov          string `json:"state_prov"`
+    District            string `json:"district"`
+    City                string `json:"city"`
+    Zipcode             string `json:"zipcode"`
+    Latitude            string `json:"latitude"`
+    Longitude           string `json:"longitude"`
+    Is_eu               string `json:"is_eu"`
+    Calling_code        string `json:"calling_code"`
+    Country_tld         string `json:"country_tld"`
+    Languages           string `json:"languages"`
+    Country_flag        string `json:"country_flag"`
+    Geoname_id          string `json:"geoname_id"`
+    Isp                 string `json:"isp"`
+    Connection_type     string `json:"connection_type"`
+    Organization        string `json:"organization"`
+    Currency            string `json:"currency"`
+    Code                string `json:"code"`
+    Name                string `json:"name"`
+    Symbol              string `json:"symbol"`
+    Time_zone           string `json:"time_zone"`
+    Name                string `json:"name"`
+    Offset              string `json:"offset"`
+    Current_time        string `json:"current_time"`
+    Current_time_unix   string `json:"current_time_unix"`
+    Is_dst              string `json:"is_dst"`
+    Dst_savings         string `json:"dst_savings"`
+	
+PS C:\Users\family\Documents\go> go get
+package .: no Go files in C:\Users\family\Documents\go
+PS C:\Users\family\Documents\go> cd .\Geolocate\
+PS C:\Users\family\Documents\go\Geolocate> go get
+# cd .; git clone -- https://github.com/labstack/echo C:\Users\family\go\src\github.com\labstack\echo
+Cloning into 'C:\Users\family\go\src\github.com\labstack\echo'...
+fatal: unable to access 'https://github.com/labstack/echo/': error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version
+package github.com/labstack/echo: exit status 128
+cannot find package "github.com/labstack/echo/middleware" in any of:
+        c:\go\src\github.com\labstack\echo\middleware (from $GOROOT)
+        C:\Users\family\go\src\github.com\labstack\echo\middleware (from $GOPATH)
